@@ -4,11 +4,11 @@ import com.example.rickandmortycleancode.model.Character
 import com.example.rickandmortycleancode.model.CharacterDetails
 import com.example.rickandmortycleancode.model.Episode
 
-interface UserRemoteRepository {
+interface CharacterRemoteRepository {
 
-    suspend fun getAllCharacters(page: Int): List<Character>
+    suspend fun getCharacters(page: Int): Result<List<Character>>
 
-    suspend fun getCharacter(id: Int): CharacterDetails
+    suspend fun getCharacter(id: Int): Result<CharacterDetails>
 
-    suspend fun getEpisode(number: Int): Episode
+    suspend fun getEpisode(number: Int): Result<Episode>
 }
