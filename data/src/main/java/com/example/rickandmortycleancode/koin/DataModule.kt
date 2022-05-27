@@ -3,9 +3,9 @@ package com.example.rickandmortycleancode.koin
 import org.koin.dsl.module
 
 val dataModule = module {
-    /*includes(
+    includes(
         databaseModule,
-        repositoryModule,
-        networkModule
-    )*/
+        networkModule,
+        repositoryModule
+    )
 }
