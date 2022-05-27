@@ -1,6 +1,8 @@
 [versions]
 
 minSdk ="21"
+compileSdk = "32"
+targetSdk = "32"
 
 androidx-core = "1.7.0"
 androidx-appcompat = "1.4.1"
