@@ -12,6 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+enableFeaturePreview("VERSION_CATALOGS")
+
 rootProject.name = "RickAndMortyCleanCode"
 include ':app'
 include ':domain'
